@@ -1,4 +1,4 @@
-# prose [![Build Status](https://travis-ci.org/jdkato/prose.svg?branch=master)](https://travis-ci.org/jdkato/prose) [![GoDoc](https://godoc.org/github.com/golang/gddo?status.svg)](https://pkg.go.dev/github.com/jdkato/prose/v2@v2.0.0?tab=doc) [![Coverage Status](https://coveralls.io/repos/github/jdkato/prose/badge.svg?branch=master)](https://coveralls.io/github/jdkato/prose?branch=master) [![Go Report Card](https://goreportcard.com/badge/github.com/jdkato/prose)](https://goreportcard.com/report/github.com/jdkato/prose) [![codebeat badge](https://codebeat.co/badges/a867ec38-c025-4f65-85f9-89a9188cc458)](https://codebeat.co/projects/github-com-jdkato-prose-master) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/avelino/awesome-go#natural-language-processing)
+# prose [![Build Status](https://travis-ci.org/Shnitzelil/prose.svg?branch=master)](https://travis-ci.org/Shnitzelil/prose) [![GoDoc](https://godoc.org/github.com/golang/gddo?status.svg)](https://pkg.go.dev/github.com/Shnitzelil/prose@v2.0.0?tab=doc) [![Coverage Status](https://coveralls.io/repos/github/Shnitzelil/prose/badge.svg?branch=master)](https://coveralls.io/github/Shnitzelil/prose?branch=master) [![Go Report Card](https://goreportcard.com/badge/github.com/Shnitzelil/prose)](https://goreportcard.com/report/github.com/Shnitzelil/prose) [![codebeat badge](https://codebeat.co/badges/a867ec38-c025-4f65-85f9-89a9188cc458)](https://codebeat.co/projects/github-com-jdkato-prose-master) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/avelino/awesome-go#natural-language-processing)
 
 `prose` is a natural language processing library (English only, at the moment) in *pure Go*. It supports tokenization, segmentation, part-of-speech tagging, and named-entity extraction.
 
@@ -7,7 +7,7 @@ You can find a more detailed summary on the library's performance here: [Introdu
 ## Installation
 
 ```console
-$ go get github.com/jdkato/prose/v2
+$ go get github.com/Shnitzelil/prose
 ```
 
 ## Usage
@@ -30,7 +30,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/jdkato/prose/v2"
+    "github.com/Shnitzelil/prose"
 )
 
 func main() {
@@ -89,7 +89,7 @@ doc, err := prose.NewDocument(
 | Email addresses | `Jane.Doe@example.com`            |
 | Hashtags        | `#trending`                       |
 | Mentions        | `@jdkato`                         |
-| URLs            | `https://github.com/jdkato/prose` |
+| URLs            | `https://github.com/Shnitzelil/prose` |
 | Emoticons       | `:-)`, `>:(`, `o_0`, etc.         |
 
 
@@ -100,7 +100,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/jdkato/prose/v2"
+    "github.com/Shnitzelil/prose/"
 )
 
 func main() {
@@ -150,7 +150,7 @@ import (
     "fmt"
     "strings"
 
-    "github.com/jdkato/prose/v2"
+    "github.com/Shnitzelil/prose"
 )
 
 func main() {
@@ -239,7 +239,7 @@ The full list of supported POS tags is given below.
 package main
 
 import (
-    "github.com/jdkato/prose/v2"
+    "github.com/Shnitzelil/prose"
 )
 
 func main() {

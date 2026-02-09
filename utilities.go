@@ -16,14 +16,6 @@ func checkError(err error) {
 	}
 }
 
-// min returns the minimum of `a` and `b`.
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
-
 // isPunct determines if the string represents a number.
 func isNumeric(s string) bool {
 	_, err := strconv.ParseFloat(s, 64)

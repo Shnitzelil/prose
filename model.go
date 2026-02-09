@@ -23,7 +23,7 @@ func UsingEntities(data []EntityContext) DataSource {
 	return UsingEntitiesAndTokenizer(data, NewIterTokenizer())
 }
 
-// UsingEntities creates a NER from labeled data and custom tokenizer.
+// UsingEntitiesAndTokenizer creates a NER from labeled data and custom tokenizer.
 func UsingEntitiesAndTokenizer(data []EntityContext, tokenizer Tokenizer) DataSource {
 	return func(model *Model) {
 		corpus := makeCorpus(data, model.tagger, tokenizer)

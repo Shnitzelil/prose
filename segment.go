@@ -24,8 +24,8 @@ import (
 	"regexp"
 	"strings"
 
-	"gopkg.in/neurosnap/sentences.v1"
-	"gopkg.in/neurosnap/sentences.v1/data"
+	"github.com/neurosnap/sentences"
+	"github.com/neurosnap/sentences/data"
 )
 
 // punktSentenceTokenizer is an extension of the Go implementation of the Punkt

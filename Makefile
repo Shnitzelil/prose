@@ -1,4 +1,4 @@
-BASE_DIR=$(shell echo $$GOPATH)/src/github.com/jdkato/prose
+BASE_DIR=$(shell echo $$GOPATH)/src/github.com/Shnitzelil/prose
 BUILD_DIR=./builds
 
 LDFLAGS=-ldflags "-s -w"
