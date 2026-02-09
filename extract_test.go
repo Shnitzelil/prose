@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"encoding/json"
 	"io"
-	"io/ioutil"
 	"math"
+	"os"
 	"path/filepath"
 	"reflect"
 	"testing"
@@ -68,7 +68,7 @@ func TestSumLogs(t *testing.T) {
 func TestNERProdigy(t *testing.T) {
 	data := filepath.Join(testdata, "reddit_product.jsonl")
 
-	file, e := ioutil.ReadFile(data)
+	file, e := os.ReadFile(data)
 	if e != nil {
 		panic(e)
 	}

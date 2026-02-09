@@ -2,7 +2,7 @@ package prose
 
 import (
 	"encoding/json"
-	"io/ioutil"
+	"os"
 	"path/filepath"
 	"testing"
 )
@@ -17,7 +17,7 @@ func readDataFile(path string) []byte {
 	p, err := filepath.Abs(path)
 	checkError(err)
 
-	data, ferr := ioutil.ReadFile(p)
+	data, ferr := os.ReadFile(p)
 	checkError(ferr)
 
 	return data
